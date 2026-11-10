@@ -1,63 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="n1ghtsh3ll is a full-stack and DevOps engineer working on applications, CI/CD, and infrastructure." />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <title>n1ghtsh3ll · Systems Archive</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Michroma&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#work">Skip to work</a>
-    <div class="archive-shell">
-      <header class="site-header">
-        <a class="brand" href="#top" aria-label="n1ghtsh3ll home"><span>◇</span> n1ghtsh3ll</a>
-        <nav aria-label="Primary navigation"><a href="#work">WORK</a><a href="#systems">SYSTEMS</a><a href="#contact">CONTACT</a></nav>
-        <a class="header-cta" href="#contact">OPEN CHANNEL ↗</a>
-      </header>
-
-      <main id="top">
-        <section class="hero-panel" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="micro">001 // FULL-STACK · DEVOPS</p>
-            <h1 id="hero-title">SYSTEMS<br /><span>THAT</span> SHIP</h1>
-            <p>I build applications and set up the infrastructure behind them, from release pipelines to the tools teams use to run production.</p>
-            <a href="#work" class="hero-link">VIEW WORK <span>↓</span></a>
-          </div>
-          <div class="hero-terminal" aria-label="System profile">
-            <div class="terminal-head"><span>STATUS / NOMINAL</span><span>UTC+07</span></div>
-            <div class="terminal-field"><span class="reticle"></span><span class="axis x"></span><span class="axis y"></span><b>FOCUS</b></div>
-            <p class="signal-line">BUILD / OPERATE / IMPROVE</p>
-            <div class="terminal-foot"><span>READY</span><span>→</span><span>01</span></div>
-          </div>
-        </section>
-
-        <section id="systems" class="ticker" aria-label="Capabilities"><span>FULL-STACK</span><i>✦</i><span>RELEASE ENGINEERING</span><i>✦</i><span>PRODUCT SYSTEMS</span><i>✦</i><span>LINUX OPS</span></section>
-
-        <section class="briefing-panel" aria-labelledby="brief-title">
-          <div class="scene" aria-hidden="true"><div class="scene-glow"></div><div class="scene-lane"></div><div class="scene-figure one"></div><div class="scene-figure two"></div><p>/// DEPLOYMENT NIGHT SHIFT</p></div>
-          <article class="brief-copy"><p class="micro">002 // OPERATING MODEL</p><h2 id="brief-title">HOW I<br /><span>WORK.</span></h2><p>I document release steps and recovery procedures so the next person can deploy, troubleshoot, or take over the system.</p><div class="brief-data"><span>INPUT<br /><b>IDEA</b></span><span>PROCESS<br /><b>BUILD</b></span><span>OUTPUT<br /><b>CONFIDENCE</b></span></div></article>
-        </section>
-
-        <section class="principles" aria-labelledby="principle-title"><header class="section-head"><p class="micro">003 // PRINCIPLES</p><h2 id="principle-title">ENGINEERING<br />PRACTICES</h2></header><div class="principle-grid"><article><div class="glyph rings" aria-hidden="true"></div><h3>RELEASE STEPS</h3><p>Document the deployment steps and who owns them.</p></article><article><div class="glyph boxes" aria-hidden="true"></div><h3>AUTOMATION</h3><p>Automate recurring tasks with checks before changes reach production.</p></article><article><div class="glyph triangle" aria-hidden="true"></div><h3>HANDOVER</h3><p>Write the setup and recovery notes the next maintainer will need.</p></article></div></section>
-
-        <section id="work" class="work-section" aria-labelledby="work-title">
-          <header class="section-head"><p class="micro">004 // SELECTED WORK</p><h2 id="work-title">PROJECT<br />ARCHIVE</h2><p>An overview of my work in application development and operations. I omit client names and internal details.</p></header>
-          <div class="filter-row" role="group" aria-label="Filter work"><button type="button" data-filter="all" aria-pressed="true">ALL <span id="project-count">03</span></button><button type="button" data-filter="product" aria-pressed="false">PRODUCT</button><button type="button" data-filter="systems" aria-pressed="false">SYSTEMS</button><button type="button" data-filter="ops" aria-pressed="false">OPS</button></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="n1ghtsh3ll. Full-stack development, release pipelines, and infrastructure." />
+  <title>n1ghtsh3ll · Development &amp; Operations</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to work</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="globe" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><ellipse cx="16" cy="16" rx="6" ry="13"/><path d="M3 16h26M6 8h20M6 24h20"/></symbol>
+    <symbol id="layers" viewBox="0 0 32 32"><path d="m3 10 13-7 13 7-13 7-13-7Zm0 7 13 7 13-7M3 24l13 7 13-7"/></symbol>
+    <symbol id="terminal" viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="22" rx="1"/><path d="m8 11 5 5-5 5m9 0h7"/></symbol>
+    <symbol id="book" viewBox="0 0 32 32"><path d="M16 8C12 4 6 4 3 5v22c4-2 9-1 13 2 4-3 9-4 13-2V5c-3-1-9-1-13 3Zm0 0v21"/></symbol>
+  </defs></svg>
+  <div class="page-frame" id="top">
+    <header class="site-header">
+      <a class="brand" href="#top">n1ghtsh3ll</a>
+      <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#systems">Expertise</a><a href="#about">About</a></nav>
+      <a class="button header-cta" href="https://github.com/andrsrjld" target="_blank" rel="noreferrer">View GitHub <svg><use href="#arrow"/></svg></a>
+    </header>
+    <main>
+      <section class="hero-panel" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">I build software.<br />And keep<br />it running.</h1>
+          <p>I work on applications and the infrastructure behind them, from the first release to the tools teams use in production.</p>
+          <a class="text-link" href="#work">Explore my work <svg><use href="#arrow"/></svg></a>
+        </div>
+        <div class="hero-art" role="img" aria-label="An illustrative architecture diagram connecting an application, a release pipeline, and infrastructure">
+          <svg viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.3" stroke-linejoin="round">
+              <path d="M40 362 260 440l220-78M40 342l220 78 220-78M40 322l220 78 220-78"/>
+              <path d="m40 322 220-78 220 78-220 78-220-78Z"/>
+              <path d="M260 400v40M40 322v40m440-40v40M85 338l175-62 175 62M130 354l130-46 130 46"/>
+              <path d="M105 273V111l286-44v162l-286 44Zm0-162 24 16 286-44-24-16m24 16v162l-24-16M129 127v162l286-44-24-16m-262 60-24-16" fill="var(--paper)"/>
+              <path d="m144 150 255-39m-255 47 255-39M150 135l1-.1m8-1 1-.1m8-1 1-.1"/>
+              <path d="m151 174 76-12v81l-76 12v-81Zm89-14 143-22v49l-143 22v-49Zm0 62 143-22m-143 33 143-22m-143 33 103-16M161 188l55-8m-55 18 42-6m-42 28 55-8m-55 18 34-5"/>
+              <path d="m282 159 9 5-9 8m40-19-9 8 9 5m-21-15-3 19"/>
+              <path d="M194 298v21l66 23 66-23v-21M260 342v27m-24-2 24 9 24-9"/>
+              <path d="M67 158v96l-29 10v47m412-159v102l29 10v47" stroke-dasharray="4 5"/>
+              <circle cx="38" cy="319" r="4"/><circle cx="479" cy="319" r="4"/>
+              <path d="M65 78v23m-11-12h23m370 3v23m-11-12h23"/>
+            </g>
+            <g fill="currentColor" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5"><text x="38" y="38">APPLICATION / DELIVERY / INFRASTRUCTURE</text><text x="39" y="416">A WORKING SYSTEM</text><text x="440" y="416">FIG. 01</text></g>
+          </svg>
+        </div>
+      </section>
+      <section id="systems" class="expertise-grid" aria-label="Areas of expertise">
+        <article class="expertise-card"><div class="icon-box"><svg><use href="#globe"/></svg></div><span class="card-number">01</span><h2>Application<br />development</h2><div class="short-rule"></div><p>I build web applications and APIs, and work on mobile releases.</p><a href="#work" class="square-link" aria-label="View application work"><svg><use href="#arrow"/></svg></a></article>
+        <article class="expertise-card"><div class="icon-box"><svg><use href="#layers"/></svg></div><span class="card-number">02</span><h2>Release<br />engineering</h2><div class="short-rule"></div><p>I set up CI/CD pipelines with migration and rollback steps.</p><a href="#work" class="square-link" aria-label="View release engineering work"><svg><use href="#arrow"/></svg></a></article>
+        <article class="expertise-card"><div class="icon-box"><svg><use href="#terminal"/></svg></div><span class="card-number">03</span><h2>Infrastructure<br />&amp; operations</h2><div class="short-rule"></div><p>I write setup scripts and tools for teams running production.</p><a href="#work" class="square-link" aria-label="View infrastructure work"><svg><use href="#arrow"/></svg></a></article>
+        <article class="expertise-card"><div class="icon-box"><svg><use href="#book"/></svg></div><span class="card-number">04</span><h2>Documentation<br />&amp; handover</h2><div class="short-rule"></div><p>I document deployment and recovery for the next maintainer.</p><a href="#about" class="square-link" aria-label="Read about my approach"><svg><use href="#arrow"/></svg></a></article>
+      </section>
+      <section class="work-contact">
+        <div class="work-panel" id="work">
+          <h2>Selected work</h2>
+          <div class="filter-row" role="group" aria-label="Filter work"><button data-filter="all" aria-pressed="true">All <span id="project-count" aria-live="polite">03</span></button><button data-filter="product" aria-pressed="false">Product</button><button data-filter="systems" aria-pressed="false">Systems</button><button data-filter="ops" aria-pressed="false">Ops</button></div>
           <div class="project-grid">
-            <article class="project-card" data-category="systems"><div class="project-visual lines" aria-hidden="true"><i></i><i></i><i></i><b>BUILD → TEST → DEPLOY</b></div><div><p class="micro">SYSTEMS / 2026</p><h3>CI/CD pipelines</h3><p>I build reusable pipelines with documented migration and rollback steps.</p></div></article>
-            <article class="project-card" data-category="product"><div class="project-visual chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div><div><p class="micro">PRODUCT / 2026</p><h3>Web, API &amp; mobile</h3><p>I work on web applications, APIs, and mobile releases, including their production setup.</p></div></article>
-            <article class="project-card" data-category="ops"><div class="project-visual console" aria-hidden="true"><p>$ inventory --check</p><p>✓ hosts mapped</p><p>✓ deploy paths</p><p>✓ handover ready</p><b>_</b></div><div><p class="micro">OPS / 2026</p><h3>Infrastructure &amp; tooling</h3><p>I write setup scripts and operational documentation for the teams maintaining the infrastructure.</p></div></article>
+            <article class="project-card" data-category="systems"><h3>CI/CD pipelines</h3><p>Reusable pipelines with documented migration and rollback steps.</p><span>Systems</span></article>
+            <article class="project-card" data-category="product"><h3>Web, API &amp; mobile</h3><p>Application development and production setup across platforms.</p><span>Product</span></article>
+            <article class="project-card" data-category="ops"><h3>Infrastructure &amp; tooling</h3><p>Setup scripts and operational notes for the teams maintaining them.</p><span>Operations</span></article>
           </div>
-        </section>
-      </main>
-
-      <footer id="contact" class="site-footer"><p class="micro">005 // OPEN CHANNEL</p><h2>FIND ME<br /><span>ON GITHUB.</span></h2><a href="https://github.com/andrsrjld" target="_blank" rel="noreferrer">VIEW GITHUB ↗</a><p class="footer-credit">© <span id="year"></span> n1ghtsh3ll · public-safe work archive</p></footer>
-    </div>
-    <script src="script.js"></script>
-  </body>
+          <p class="privacy-note">Work areas shown without client names or internal details.</p>
+        </div>
+        <div class="contact-panel" id="about"><h2>Development<br />through to<br />deployment.</h2><p>I document release steps and recovery procedures so the next person can deploy, troubleshoot, or take over.</p><a id="contact" class="button" href="https://github.com/andrsrjld" target="_blank" rel="noreferrer">Find me on GitHub <svg><use href="#arrow"/></svg></a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><p>Development &amp; Operations</p><a class="footer-brand" href="#top">n1ghtsh3ll<span>↗</span></a><span class="copyright">© <span id="year"></span></span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
