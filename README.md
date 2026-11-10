@@ -2,7 +2,7 @@
 
 Personal site for Christian Rizaldi (n1ghtsh3ll), DevOps engineer since 2019, open for freelance projects.
 
-Live: https://andrsrjld.github.io/n1ghtsh3ll-portfolio/
+Live: https://andrsrjld.github.io/
 
 ## Run locally
 
