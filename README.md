@@ -1,6 +1,8 @@
-# n1ghtsh3ll Portfolio
+# Christian Rizaldi · Freelance DevOps
 
-A public-safe static portfolio for a full-stack and DevOps engineer.
+Personal site for Christian Rizaldi (n1ghtsh3ll), DevOps engineer since 2019, open for freelance projects.
+
+Live: https://andrsrjld.github.io/n1ghtsh3ll-portfolio/
 
 ## Run locally
 
@@ -12,8 +14,4 @@ Then open `http://localhost:4173`.
 
 ## Deployment
 
-The site has no build step and can be deployed directly to GitHub Pages, Cloudflare Pages, Netlify, or any static web host.
-
-## Content safety
-
-Case studies are deliberately anonymized. Do not add client credentials, private endpoints, internal repository links, environment details, or operational data.
+Static HTML, CSS, and JavaScript with no build step. Served by GitHub Pages from the `main` branch root.
