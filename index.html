@@ -3,137 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="n1ghtsh3ll is a full-stack and DevOps engineer building resilient software systems." />
+    <meta name="description" content="n1ghtsh3ll is a full-stack and DevOps engineer building systems that ship." />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <title>n1ghtsh3ll · Full-stack & DevOps Engineer</title>
+    <title>n1ghtsh3ll · Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <div class="page-noise" aria-hidden="true"></div>
-
+    <a class="skip-link" href="#main">Skip to work</a>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="n1ghtsh3ll home">n1ghtsh3ll<span>_</span></a>
+      <a class="brand" href="#top" aria-label="n1ghtsh3ll home"><span class="brand-mark">▣</span><span>n1ghtsh3ll</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#systems">Systems</a>
+        <a href="#work">Portfolio</a>
+        <a href="#notes">Notes</a>
         <a href="#contact">Contact</a>
       </nav>
-      <p class="status"><span aria-hidden="true"></span> available for selected work</p>
+      <a class="header-cta" href="#contact">LET'S TALK <span aria-hidden="true">↗</span></a>
     </header>
 
     <main id="main">
-      <section id="top" class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-kicker"><span>01</span> / SYSTEM PROFILE</div>
-        <div class="hero-grid">
-          <div>
-            <p class="terminal-line" aria-hidden="true"><span>visitor@n1ghtsh3ll</span>:~$ whoami</p>
-            <h1 id="hero-title"><span class="prompt">&gt;</span> I build the systems behind digital products.</h1>
-            <p class="hero-copy">Full-stack engineer with a DevOps mindset. I work where software delivery, reliable infrastructure, and practical product decisions meet.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#work">./view-work <span aria-hidden="true">↘</span></a>
-              <a class="button button-plain" href="https://github.com/andrsrjld" target="_blank" rel="noreferrer">github <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <aside class="system-card" aria-label="System status">
-            <div class="card-bar"><span>SESSION: ACTIVE</span><span>UTC+07</span></div>
-            <dl>
-              <div><dt>ROLE</dt><dd>Full-stack / DevOps</dd></div>
-              <div><dt>FOCUS</dt><dd>Systems that ship</dd></div>
-              <div><dt>MODE</dt><dd>Build · automate · improve</dd></div>
-            </dl>
-            <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </aside>
+      <section id="top" class="hero layout-grid" aria-labelledby="hero-title">
+        <p class="meta hero-meta">BASED IN INDONESIA <span>◆</span> BUILDING FOR THE WEB</p>
+        <p class="meta hero-count"><span id="project-count">03</span> SELECTED PROJECTS</p>
+        <div class="hero-title-wrap">
+          <p class="meta title-label">FULL-STACK / DEVOPS</p>
+          <h1 id="hero-title">PORT_<br />FOLIO<span>_</span></h1>
         </div>
-        <p class="scroll-hint"><span aria-hidden="true">↓</span> scroll to inspect</p>
+        <aside class="intro-copy">
+          <p>Engineering practical digital products, delivery systems, and infrastructure that keeps working after launch.</p>
+          <a href="#work">EXPLORE THE WORK <span aria-hidden="true">↓</span></a>
+        </aside>
+        <div class="hero-glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
       </section>
 
-      <section id="work" class="work section-shell" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p><span>02</span> / SELECTED SIGNALS</p>
-          <h2 id="work-title">Work that holds up <em>outside</em> the happy path.</h2>
+      <section id="work" class="work-section" aria-labelledby="work-title">
+        <div class="section-bar">
+          <div><span class="index">01</span><h2 id="work-title">SELECTED<br />WORK</h2></div>
+          <p>A small selection of work across product delivery, engineering systems, and operational tooling. Client-sensitive details are intentionally omitted.</p>
         </div>
-        <div class="case-list">
-          <article class="case-study">
-            <div class="case-index">[01]</div>
-            <div class="case-summary">
-              <p class="eyebrow">Delivery systems</p>
-              <h3>One pipeline, fewer surprises.</h3>
-              <p>Designed reusable CI/CD building blocks that make build, release, migration, and rollback behavior explicit across services.</p>
-              <ul class="tag-list" aria-label="Technologies used"><li>Docker</li><li>GitLab CI</li><li>Release safety</li></ul>
-            </div>
-            <div class="case-mark" aria-hidden="true"><span>↗</span><small>PIPELINE / V2</small></div>
+        <div class="filter-row" role="group" aria-label="Filter work">
+          <button type="button" data-filter="all" aria-pressed="true">ALL <span>03</span></button>
+          <button type="button" data-filter="product" aria-pressed="false">PRODUCT</button>
+          <button type="button" data-filter="systems" aria-pressed="false">SYSTEMS</button>
+          <button type="button" data-filter="ops" aria-pressed="false">OPS</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-card--featured" data-category="systems">
+            <div class="project-frame frame-pipeline" aria-hidden="true"><div class="pipeline-line line-a"></div><div class="pipeline-line line-b"></div><div class="pipeline-node node-a"></div><div class="pipeline-node node-b"></div><div class="pipeline-node node-c"></div><strong>BUILD → TEST → DEPLOY</strong></div>
+            <div class="project-info"><p class="meta">SYSTEMS / 2026</p><h3>Release paths without hidden steps.</h3><p>Reusable CI/CD patterns that make builds, migrations, and rollback boundaries clear.</p><span class="arrow">↗</span></div>
+            <div class="project-stats"><span>CI/CD</span><span>DOCKER</span><span>GITLAB</span></div>
           </article>
-          <article class="case-study">
-            <div class="case-index">[02]</div>
-            <div class="case-summary">
-              <p class="eyebrow">Product platform</p>
-              <h3>One product across web, API, and mobile.</h3>
-              <p>Contributed to a multi-surface platform by connecting frontend delivery, backend services, mobile workflows, and production readiness.</p>
-              <ul class="tag-list" aria-label="Technologies used"><li>Node</li><li>Go</li><li>Flutter</li><li>Docker</li></ul>
-            </div>
-            <div class="case-mark" aria-hidden="true"><span>↗</span><small>MULTI-SURFACE</small></div>
+          <article class="project-card" data-category="product">
+            <div class="project-frame frame-product" aria-hidden="true"><div class="app-window"><span></span><span></span><span></span><b>TEAM / LEAGUE / PLAY</b><div class="app-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+            <div class="project-info"><p class="meta">PRODUCT / 2026</p><h3>One platform, many surfaces.</h3><p>Full-stack delivery across web, API, mobile, and production environments.</p><span class="arrow">↗</span></div>
+            <div class="project-stats"><span>NODE</span><span>GO</span><span>FLUTTER</span></div>
           </article>
-          <article class="case-study">
-            <div class="case-index">[03]</div>
-            <div class="case-summary">
-              <p class="eyebrow">Operational engineering</p>
-              <h3>Infrastructure people can actually operate.</h3>
-              <p>Worked on deployment inventory, remote delivery automation, access patterns, and repeatable environment setup for growing teams.</p>
-              <ul class="tag-list" aria-label="Technologies used"><li>Linux</li><li>Infrastructure</li><li>Automation</li></ul>
-            </div>
-            <div class="case-mark" aria-hidden="true"><span>↗</span><small>OPS / TOOLING</small></div>
+          <article class="project-card" data-category="ops">
+            <div class="project-frame frame-ops" aria-hidden="true"><div class="terminal-stack"><p>inventory --check</p><p><b>✓</b> hosts mapped</p><p><b>✓</b> deploy paths</p><p><b>✓</b> handover ready</p><span>_</span></div></div>
+            <div class="project-info"><p class="meta">OPS / 2026</p><h3>Infrastructure that people can run.</h3><p>Operational tooling, repeatable setup, and documentation designed for real teams.</p><span class="arrow">↗</span></div>
+            <div class="project-stats"><span>LINUX</span><span>AUTOMATION</span><span>RUNBOOKS</span></div>
           </article>
         </div>
       </section>
 
-      <section id="systems" class="systems section-shell" aria-labelledby="systems-title">
-        <div class="section-heading compact">
-          <p><span>03</span> / CAPABILITY MAP</p>
-          <h2 id="systems-title">Ask the terminal.</h2>
-        </div>
-        <div class="terminal-wrap">
-          <div class="terminal" aria-live="polite">
-            <div class="terminal-titlebar"><span class="terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>capabilities.sh</span><span>⌘ K</span></div>
-            <div class="terminal-body">
-              <p class="terminal-line"><span>visitor@n1ghtsh3ll</span>:~$ <b id="command-text">help</b></p>
-              <div id="terminal-output" class="terminal-output">
-                <p>Choose a command to inspect the toolkit.</p>
-                <ul><li><b>ship</b> — frontend, backend, mobile delivery</li><li><b>operate</b> — infrastructure and deployments</li><li><b>improve</b> — reliability, automation, documentation</li></ul>
-              </div>
-              <p class="terminal-line dim"><span>visitor@n1ghtsh3ll</span>:~$ <span class="cursor" aria-hidden="true"></span></p>
-            </div>
-          </div>
-          <div class="command-grid" role="group" aria-label="Portfolio commands">
-            <button type="button" data-command="ship"><span>./</span> ship</button>
-            <button type="button" data-command="operate"><span>./</span> operate</button>
-            <button type="button" data-command="improve"><span>./</span> improve</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="principles section-shell" aria-labelledby="principles-title">
-        <div class="section-heading compact"><p><span>04</span> / WORKING PRINCIPLES</p><h2 id="principles-title">Low drama is a feature.</h2></div>
-        <div class="principle-grid">
-          <article><span>01</span><h3>Make failure legible.</h3><p>Good systems show what happened, where to look, and how to recover.</p></article>
-          <article><span>02</span><h3>Automate the boring risk.</h3><p>Repeatable work deserves guardrails, not more manual memory.</p></article>
-          <article><span>03</span><h3>Document the decisions.</h3><p>Context should stay useful after the deploy, the handoff, and the incident.</p></article>
+      <section id="notes" class="notes-section layout-grid" aria-labelledby="notes-title">
+        <div class="notes-main"><p class="meta"><span class="index">02</span> WORKING PRINCIPLES</p><h2 id="notes-title">Built to be<br /><em>understood.</em></h2></div>
+        <div class="note-list">
+          <article><span>01</span><h3>Make the path visible.</h3><p>Deployments, decisions, and ownership should be easy to trace when something changes.</p></article>
+          <article><span>02</span><h3>Automate the repeatable risk.</h3><p>Guardrails should protect the team without making the work harder to ship.</p></article>
+          <article><span>03</span><h3>Leave the system calmer.</h3><p>Good engineering reduces uncertainty for the person who maintains it next.</p></article>
         </div>
       </section>
     </main>
 
-    <footer id="contact" class="site-footer section-shell">
-      <p class="footer-kicker">05 / OPEN CHANNEL</p>
-      <h2>Have a system worth making <em>calmer?</em></h2>
-      <div class="footer-row">
-        <a class="contact-link" href="https://github.com/andrsrjld" target="_blank" rel="noreferrer">Open GitHub <span aria-hidden="true">↗</span></a>
-        <p>© <span id="year"></span> n1ghtsh3ll · built without client secrets.</p>
-      </div>
+    <footer id="contact" class="site-footer">
+      <div><p class="meta">OPEN CHANNEL / 2026</p><h2>READY TO DISCUSS<br /><span>YOUR PROJECT?</span></h2></div>
+      <div class="footer-actions"><a class="primary-link" href="https://github.com/andrsrjld" target="_blank" rel="noreferrer">OPEN GITHUB <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#top">BACK TO TOP ↑</a></div>
+      <p class="footer-credit">© <span id="year"></span> n1ghtsh3ll. Built with public-safe project summaries.</p>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

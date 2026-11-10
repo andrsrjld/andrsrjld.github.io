@@ -1,7 +1,7 @@
 # n1ghtsh3ll Portfolio Design
 
 ## Intent
-Create a public-safe personal portfolio for **n1ghtsh3ll**, a full-stack and DevOps engineer. The site should feel unlike a generic agency portfolio: a calm, dark command-line workspace that progressively reveals real capabilities and anonymized evidence of work.
+Create a public-safe personal portfolio for **n1ghtsh3ll**, a full-stack and DevOps engineer. The site should feel unlike a generic agency portfolio: an editorial command-center built from an ivory frame, black panels, strict technical grids, and an original orange signal accent.
 
 ## Audience and job
 Hiring managers, technical founders, and collaborators should be able to understand three things within the first screen: who the engineer is, the kind of systems they work on, and how to start a conversation.
@@ -22,12 +22,12 @@ Hiring managers, technical founders, and collaborators should be able to underst
 | Accessibility | Semantic landmarks, visible focus, contrast-safe colors, reduced-motion support, and no interaction that relies on hover. |
 
 ## Design direction
-**Tone:** midnight terminal, technical, editorial, not retro-computer cosplay.
+**Tone:** high-contrast editorial control room, technical, precise, not retro-computer cosplay.
 
-- Near-black background with blue-black panels, warm terminal phosphor, ice-blue links, and orange-red incident accents.
-- Use a mono font for interaction and metadata. Use a compact sans-serif for long reading.
-- An oversized `>` prompt, a living status line, grid texture, and thin scan-line accents establish the system metaphor.
-- Avoid gradients, glass cards, fake dashboards, excessive rounded rectangles, or decorative code blocks.
+- An ivory page frame surrounds deep-black surfaces, fine engineering lines, and a single orange signal accent.
+- Use mono typography for labels and metadata. Use a compact geometric sans-serif for expressive display headlines.
+- A large `PORT_FOLIO_` wordmark, sight-line glyph, modular project panels, and a strict grid make the site feel intentional.
+- Avoid gradients, glass cards, logo walls, oversized shadows, or copied brand marks.
 
 ## Content states
 | State | Treatment |
@@ -36,8 +36,8 @@ Hiring managers, technical founders, and collaborators should be able to underst
 | Empty | Not applicable. Sections have authored content. |
 | Error | Not applicable. No runtime data dependency exists. |
 | Partial | Not applicable. No remote source can partially load. |
-| Success | Clicking a command updates the terminal response and announces the selected focus. |
+| Success | Selecting a work filter visibly narrows the project cards, updates the selected control state, and updates the visible-project count. |
 | Permission | Not applicable. No gated content exists. |
 
 ## Implementation decision
-Build dependency-free static HTML, CSS, and JavaScript for portable deployment to GitHub Pages or Cloudflare Pages. The terminal layer enhances navigation but does not hide any core content.
+Build dependency-free static HTML, CSS, and JavaScript for portable deployment to GitHub Pages or Cloudflare Pages. The work filter enhances scanning but does not hide the complete portfolio from users who do not interact with it.
