@@ -20,6 +20,23 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => applyFilter(button.dataset.filter));
 });
 
+document.querySelectorAll("[data-show]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    applyFilter(link.dataset.show);
+    const panel = document.querySelector("#work");
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    panel.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    history.replaceState(null, "", "#work");
+    document.querySelectorAll(".project-card:not([hidden])").forEach((card) => {
+      card.classList.remove("is-flash");
+      void card.offsetWidth;
+      card.classList.add("is-flash");
+    });
+    document.querySelector(`[data-filter="${link.dataset.show}"]`).focus({ preventScroll: true });
+  });
+});
+
 document.querySelector("#year").textContent = new Date().getFullYear();
 
 const themeToggle = document.querySelector(".theme-toggle");
